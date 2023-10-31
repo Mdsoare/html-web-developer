@@ -54,10 +54,19 @@ O primeiro passo para uma formação Front-End é entender como funciona o **HTM
     </tr>
     <tr>
       <td>02</td>
-      <td>Laboratório</td>
+      <td>Laboratório 1</td>
       <td align="center">
         <a href="https://github.com/Mdsoare/html-web-developer/tree/main/02-laboratorio">
-           <img align="center" alt="Acesse o laboratório" src="https://img.shields.io/badge/clique%20aqui-E94D5F?style=for-the-badge">
+           <img align="center" alt="Acesse o primeiro laboratório" src="https://img.shields.io/badge/clique%20aqui-E94D5F?style=for-the-badge">
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td>Laboratório 2</td>
+      <td align="center">
+        <a href="https://github.com/Mdsoare/html-web-developer/tree/main/03-laboratorio">
+           <img align="center" alt="Acesse o segundo laboratório" src="https://img.shields.io/badge/clique%20aqui-30A3DC?style=for-the-badge">
         </a>
       </td>
     </tr>
