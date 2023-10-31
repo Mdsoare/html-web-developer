@@ -25,13 +25,13 @@ O primeiro passo para uma formação Front-End é entender como funciona o **HTM
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-000?style=for-the-badge&logo=bootstrap&logoColor=30A3DC)](https://www.w3schools.com/bootstrap/bootstrap_ver.asp)
 
 
-## Percurso ⌛
+## Tópicos ⌛
 
-### Tópicos:
-
-- Primeiros Passos com HTML
-- HTML I - Conceitos Básicos
-- HTML II - Ampliando o Conhecimento
+| Nº |     Conteúdo      |
+| -- | ----------------- |
+| 01 | Primeiros Passos com HTML  |
+| 02 | HTML I - Conceitos Básicos | 
+| 03 | HTML II - Ampliando o Conhecimento | 
 
 <br>
 <table>
