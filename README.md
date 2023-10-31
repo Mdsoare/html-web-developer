@@ -26,6 +26,14 @@ O primeiro passo para uma formação Front-End é entender como funciona o **HTM
 
 
 ## Percurso ⌛
+
+### Tópicos:
+
+- Primeiros Passos com HTML
+- HTML I - Conceitos Básicos
+- HTML II - Ampliando o Conhecimento
+
+<br>
 <table>
   <thead>
     <tr align="left">
@@ -37,31 +45,22 @@ O primeiro passo para uma formação Front-End é entender como funciona o **HTM
   <tbody align="left">
     <tr>
       <td>01</td>
-      <td>Primeiros Passos com HTML</td>
+      <td>Apostilas</td>
       <td align="center">
-        <a href="https://github.com/Mdsoare/html/tree/main/laboratorio-01">
-           <img align="center" alt="Material de Apoio" src="https://img.shields.io/badge/Ver%20Material-30A3DC?style=for-the-badge">
+        <a href="https://github.com/Mdsoare/html-web-developer/tree/main/01-apoio">
+           <img align="center" alt="Acesse as apostilas em PDF" src="https://img.shields.io/badge/clique%20aqui-30A3DC?style=for-the-badge">
         </a>
       </td>
     </tr>
     <tr>
       <td>02</td>
-      <td>HTML I: Conceitos Básicos</td>
+      <td>Laboratório</td>
       <td align="center">
-        <a href="https://github.com/Mdsoare/cybersecurity/tree/main/laboratorio-02">
-           <img align="center" alt="Material de Apoio" src="https://img.shields.io/badge/Ver%20Material-E94D5F?style=for-the-badge">
+        <a href="https://github.com/Mdsoare/html-web-developer/tree/main/02-laboratorio">
+           <img align="center" alt="Acesse o laboratório" src="https://img.shields.io/badge/clique%20aqui-E94D5F?style=for-the-badge">
         </a>
       </td>
     </tr>
-    <tr>
-      <td>03</td>
-      <td>HTML II: Ampliando o Conhecimento</td>
-      <td align="center">
-        <a href="https://github.com/Mdsoare/cybersecurity/tree/main/laboratorio-03">
-           <img align="center" alt="Material de Apoio" src="https://img.shields.io/badge/Ver%20Material-30A3DC?style=for-the-badge">
-        </a>
-      </td>
-    </tr>  
   </tbody>
   <tfoot></tfoot>
 </table>
