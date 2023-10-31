@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="300">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Site HTML</title>
+    <!--CSS BOOTSTRAP: https://getbootstrap.com.br/docs/4.1/getting-started/introduction/-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="src/css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- a melhor prática é usar CSS em vez da tag font -->
+    <!-- <font color="red" face="'Trebuchet MS', Tahoma, Arial">Exemplos</font> -->
+    <h1>Site de exemplo</h1><br>
+
+    <h3>Resumo</h3>
+
+    <blockquote> <!-- usado para citações -->
+        <p>Simples <u><b><i>exemplo</i></b></u> de usu de várias tags para <strong>HTML</strong>.
+            É útil para visualizar o <mark>funcionamento de cada uma delas</mark><sup><a href="#nota1">1</a></sup>.</p>
+        <!-- #nota redireciona para o id nota1 nesta página -->
+    </blockquote><br>
+
+    <div class="container">
+        <ul id="indice">
+            <h4>Índice:</h4>
+            <li><a href="#primeiro">Trabalhando com imagens</a></li>
+            <li><a href="#segundo">Trabalhando com audios</a></li>
+            <li><a href="#terceiro">Trabalhando com video</a></li>
+            <li><a href="#quarto">Trabalhando com iframe</a></li>
+            <li><a href="#quinto">Trabalhando com tabelas</a></li>
+            <li><a href="#sexto">Trabalhando com formulários</a></li>
+            <li><a href="#setimo">Botões de controle</a></li>
+        </ul><br>
+    </div>
+
+    <hr>
+    <div class="container">
+        <h2 id="primeiro">1º - Trabalhando com imagens<sup><a href="#indice">*</a></sup></h2>
+        <!-- src = define a origem da imagem. Pode ser uma URL também -->
+        <!-- title = exibe msg ao passar o mouse sobre a imagem -->
+        <!-- alt = acessibilidade para leitura feita por robo (ex: NVDA) -->
+        <!-- width / heigth = largura e altura -->
+        <!-- align = define alinhamento de uma imagem em relação ao seu contexto -->
+        <!-- <img align="left|right|middle|top|bottom"> -->
+        <img src="./src/img/giphy.gif" title="Pássaro voando" alt="Gif pássaro voando" width="300" height="200">
+        <img src="./src/img/6383297.jpg" title="Notas de 100 reais" alt="imagem de 100 reais" width="300" height="200">
+        <img src="./src/img/safe.svg" title="Escudo" alt="Imagem de um escudo" width="300" height="200">
+    </div>
+
+    <hr>
+    <div class="container">
+        <h2 id="segundo">2º - Trabalhando com audios<sup><a href="#indice">*</a></sup></h2>
+        <!-- controls = Permite que o navegador renderize controles básicos para manipular mídia. Play, Stop, Volume, etc. -->
+        <!-- autoplay = reproduz automaticamente o audio -->
+        <!-- source = define o local do vídeo 'src' e o tipo 'type'-->
+        <!-- OBS: Site com fundo musical = autoplay e sem o atributio controls-->
+
+        <label>Hino Nacional Brasileiro</label><br>
+        <audio controls title="Hino Nacional Brasileiro">
+            <source src="./src/audios/hino-nacional-brasileiro.mp3" type="audio/mp3">
+            Seu navegador não tem suporte para este audio
+        </audio><br>
+
+        <label>Hino a Bandeira Nacional</label><br>
+        <audio controls title="Hino a Bandeira Nacional">
+            <source src="./src/audios/hino-a-bandeira-nacional.mp3" type="audio/mp3">
+            Seu navegador não tem suporte para este audio
+        </audio><br>
+
+        <label>Hino Proclamação da República</label><br>
+        <audio controls title="Hino Proclamação da República">
+            <source src="./src/audios/hino-da-proclamacao-da-republica.mp3" type="audio/mp3">
+            Seu navegador não tem suporte para este audio
+        </audio><br>
+
+        <label>Hino da Independência do Brasil</label><br>
+        <audio controls title="Hino da Independência do Brasil">
+            <source src="./src/audios/hino-da-independencia-do-brasil.mp3" type="audio/mp3">
+            Seu navegador não tem suporte para este audio
+        </audio><br>
+
+        <label>Hino Canção do Expedicionário</label><br>
+        <audio controls title="Hino Canção do Expedicionário">
+            <source src="./src/audios/cancao-expedicionario.mp3" type="audio/mp3">
+            Seu navegador não tem suporte para este audio
+        </audio><br>
+    </div>
+
+    <hr>
+    <div class="container">
+        <h2 id="terceiro">3º - Trabalhando com video<sup><a href="#indice">*</a></sup></h2>
+        <!-- tags embed / object estão sendo descontinuadas! Use a tag vídeo -->
+        <!-- <embed src="./src/movie/abelha.mp4" type="mp4" width="400" height="250"> -->
+        <!-- video = conteúdo de video  controls = para habilitar controles play/stop e volume -->
+        <video controls autoplay width="300" height="200">
+            <source src="./src/movie/abelha.mp4" type="video/mp4">
+            <source src="./src/movie/abelha.ogg" type="video/ogg">
+            <source src="./src/movie/abelha.webm" type="video/webm">
+            <track src="./src/movie/legenda-en.vtt" kind="captions" srclang="en">
+            <track default src="./src/movie/legenda-pt-br.vtt" kind="captions" srclang="pt-br">
+            Seu navegador não suporta este formato de vídeo
+            <!-- tag track = usada para carregar legenda -->
+            <!-- default = defina a legenda padrão em caso de mais opções de legenda -->
+            <!-- scr = origem do arquivo de legenda -->
+            <!-- kind = define opções de acessibilidade para leitores de tela -->
+            <!-- srclang = tipo de idioma da legenda que aparece no navegador -->
+
+        </video><br>
+        <span>Para visualizar mais vídeos<a href="https://pixabay.com/pt/videos/">clique aqui</a></span>
+    </div>
+
+    <hr>
+    <div class="container">
+        <h2 id="quarto">4º - Trabalhando com iframe<sup><a href="#indice">*</a></sup></h2>
+
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/mRhjlDN4Ezo?si=1vPam5B5Jf4HmT5V"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99047.672235029!2d-43.53409986264066!3d-22.695468157402335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x995d694889f955%3A0x23ff502568217834!2sNova%20Igua%C3%A7u%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1698449380313!5m2!1spt-BR!2sbr"
+            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <hr>
+    <div class="container">
+        <h2 id="quinto">5º - Trabalhando com tabelas<sup><a href="#indice">*</a></sup></h2>
+        <!-- Table =  para criação de tabelas -->
+        <!-- thead, tbody e tfoot = Separar semanticamente a tabela -->
+        <!-- tr = linhas -->
+        <!-- th = cabeçalho -->
+        <!-- td = colunas -->
+        <!-- title =  faz o mesmo que em outras tags -->
+        <!-- summary = assessibilidade para leitores de tela -->
+        <!-- caption = descrição da tabela. OBS: Ao usar o summary evite usar o caption -->
+        <!-- colspan = usado para mesclas cédulas na horizontal -->
+        <!-- rowspan = usado para mesclas cédulas na vertical -->
+        <table>
+            <thead
+                summary="Esta tabela demonstra um exemplo de gastos referentes aos meses: Janeiro, Julho, Outubro e Dezembro">
+                <tr>
+                    <th colspan="2">Meus gastos pessoais</th>
+                </tr>
+                <tr>
+                    <th colspan="2">.........................................</th>
+                </tr>
+                <tr>
+                    <th title="Mês de referênca">Mes</th>
+                    <th title="Valor gasto no mês">Valor</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td>Julho</td>
+                    <td>R$ 180,00</td>
+                </tr>
+                <tr>
+                    <td>Outubro</td>
+                    <td>R$ 230,00</td>
+                </tr>
+                <tr>
+                    <td>Dezembro</td>
+                    <td>R$ 80,00</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>R$ 540,00</td>
+                </tr>
+            </tfoot>
+            <caption>Exemplo de uma tabela com anotações de gastos em meses específicos</caption>
+        </table>
+
+    </div>
+
+    <hr>
+    <div class="container">
+        <h2 id="sexto">6º - Trabalhando com formulários<sup><a href="#indice">*</a></sup></h2>
+        <!-- name = variável -->
+        <!-- target= comportamento do redirecionamento _blank abre outra aba e _self na mesma (default) -->
+        <!-- action = url e # é a mesma página (para teste) -->
+        <!-- method = usual get ou post -->
+        <!-- autocomplete = habilita(on) ou desabilita o cache -->
+        <!-- onreset = dispara evento ao clicar no botão de reset (aqui Limpar) -->
+        <!-- onsubmit = dispara evento ao clicar no submit (aqui Enviar) -->
+        <!-- event é uma variável default html contendo uma série de valores -->
+        <form name="signup" target="_self" action="#" method="get" autocomplete="off" onreset="limpar(event)"
+            onsubmit="enviar(event)">
+            <fieldset> <!--tag semântica para separa blocos -->
+                <legend>Dados Cadastrais</legend>
+                <label>ID do Estudante:</label>
+                <!-- min = define o menor valor possível -->
+                <!-- max = define o maior valor -->
+                <!-- step = define o salto, no caso aqui de dois em dois   -->
+                <input type="number" name="idEstudante" placeholder="ID do estudante" title="ID do Estudante" required
+                    min="0" max="98" step="2" class="form-control"><br>
+                <label>Nome do Estudante:</label>
+                <!-- type = tipo de input name = nome da variável a ser tratada no backend -->
+                <!-- required = campo obrigatório -->
+                <!-- placeholder = caixa de texto ao passar o mouse no campo -->
+                <!-- title = nome exposto no campo se nada for digitado, mas não é valor tratável -->
+                <input type="text" name="nome" placeholder="Nome" required title="digite seu nome"
+                    class="form-control"><br>
+                <label>Data Nascimento:</label>
+                <input type="date" class="form-control"><br>
+                <label>Formulário:</label>
+                <input type="text" name="tituloFormulario" placeholder="Título do formulário"
+                    title="digite o título do formulário" class="form-control"><br>
+                <label>Título da Tarefa:</label>
+                <input type="text" name="tituloTarefa" placeholder="Título da tarefa"
+                    title="digite o título de sua tarefa" class="form-control"><br>
+                <label>Nota:</label>
+                <input type="text" name="nota" placeholder="Opcional" title="digite uma nota" class="form-control"><br>
+                <label>Comentários e menções:</label>
+                <textarea name="comentarios" placeholder="Opcional" cols="148" rows="5"
+                    title="digite seus comentários"></textarea><br><br>
+            </fieldset>
+
+            <fieldset>
+                <h2 id="setimo">7º - Botões de controle<sup><a href="#indice">*</a></sup></h2>
+                <label> Status da Tarefa:</label>
+                <select name="status" class="form-control">
+                    <option value="" selected>Selecione uma opção</option>
+                    <option value="parada">Parada</option>
+                    <option value="espera">Na fila</option>
+                    <option value="iniciada">Iniciada</option>
+                    <option value="completa">Concluída</option>
+                </select><br>
+                <!-- name = op[] para a variável ser tratada como uma lista -->
+                <!-- desabled = desabilita a opção -->
+                <label>Agendar tarefa:</label><br>
+                <input type="checkbox" name="op[]" value="tarefa1"> Iniciar após uma semana <br>
+                <input type="checkbox" name="op[]" value="tarefa2" disabled> Iniciar após um mês <br><br>
+                <!--radio deve ter o mesmo nome com valores diferentes -->
+                <input type="radio" name="lembrete" value="lembrar"> Enviar SMS <br>
+                <input type="radio" name="lembrete" value="esquecer"> Enviar e-mail <br><br>
+                <label>E-mail:</label>
+                <input type="email" name="e-mail">
+                <label>Password:</label>
+                <input type="password"><br><br>
+                <!-- outros tipos de inputs -->
+                <input type="search" name="pesquisa" value="Passe o mouve aqui" onmouseover="msg()"><br><br>
+                <input type="range">
+                <input type="color"><br><br><br>
+            </fieldset>
+
+            <fieldset>
+                <h4>Envio de cadastro<sup><a href="#indice">*</a></sup></h4><br>
+                <script src="./src/js/script.js"></script>
+                <!-- name envio e não submit para não gerar conflito com o método .submit() -->
+                <!-- nome redefinir e não reset para não gerar o conflito com o método .reset() -->
+                <input type="submit" name="envio" value="Enviar" class="btn btn-primary">
+                <input type="reset" name="redefinir" value="Limpar" class="btn btn-warning">
+            </fieldset>
+        </form>
+    </div><br><br>
+
+    <hr id="final">
+
+    <div class="container">
+        <h6><strong>Notas de rodapé<sup><a href="#indice">*</a></sup>:</strong></h6>
+        <ol>
+            <li id="nota1"><b>Nota 1: </b>Exemplo de nota de rodapé nº 1</li>
+        </ol>
+    </div>
+
+</body>
+
+</html>

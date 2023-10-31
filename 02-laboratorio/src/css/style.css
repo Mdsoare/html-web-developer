@@ -1,0 +1,75 @@
+/* Apenas um teste */
+body {
+    background-color: rgb(239, 237, 237);
+}
+
+h1 {
+    color: rgba(241, 72, 6, 0.5);
+    font-family: Helvetica, Arial, 'Trebuchet Ms';
+}
+
+h2,
+h3 {
+    color: blueviolet;
+    font-family: Helvetica, Arial, 'Trebuchet Ms';
+}
+
+p,
+h3 {
+    text-align: center;
+}
+
+label {
+    font-style: oblique;
+}
+
+table {
+    margin: auto;
+    border: solid 1px gray;
+    -webkit-box-shadow: 12px 14px 6px 5px rgba(0, 0, 0, 0.24);
+    box-shadow: 12px 14px 6px 5px rgba(0, 0, 0, 0.24);
+}
+
+thead th, tfoot td {
+    background-color: black;
+    color: azure;
+}
+
+
+tr:nth-child(even) {
+    background-color: lightgreen;
+}
+
+tr:hover td {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+/*
+table, tr, th, td {
+    border: 3px solid black;
+    margin: auto;
+}
+
+tfoot td {
+    background-color: lightgray;
+}
+*/
+
+hr {
+    text-align: center;
+    background-color: red;
+    border-width: 2px;
+    width: 82%;
+}
+
+#final {
+    background-color: green;
+}
+
+fieldset {
+    border: 3px;
+    border-radius: 10px;
+    border-color: black;
+    margin: 5px;
+}
