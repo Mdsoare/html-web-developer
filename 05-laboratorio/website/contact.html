@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="300">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Clínica Amanhecer - Contact Us</title>
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul id="indice">
+                <li><a href="./index.html">HomePage</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./working.html">Working</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+            </ul><br>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <!-- Aqui vai o seu header -->
+                <img id="logo1" src="./logo/logo4.png" title="Logotipo" alt="Logotipo" width="100">
+                <h1>Clínica Geral de NY</h1>
+            </div>
+
+            <div class="content">
+                <h1>Formulário</h1>
+                <form name="signup" target="_self" action="#" method="get" autocomplete="off" onreset="limpar(event)"
+                    onsubmit="enviar(event)">
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <label>Nome:</label>
+                        <input type="text" name="nome" placeholder="Nome completo" required
+                            title="digite aqui seu nome completo"><br>
+                        <br>
+                        <label>E-mail:</label>
+                        <input type="email" name="email" placeholder="seu_email@exemplo.com.br"
+                            title="digite aqui seu e-mail" required><br>
+                        <br>
+                        <label>Data Nascimento:</label>
+                        <input type="date"><br>
+                    </fieldset>
+                    <br>
+
+                    <fieldset>
+                        <legend>Contato</legend>
+                        <label>Assunto</label>
+                        <input type="text" name="assunto" placeholder="Título do assunto" title="digite o assunto">
+                        <br>
+                        <br>
+                        <label>Mensagem:</label>
+                        <textarea name="mensagem" placeholder="Sua mensagem" cols="111" rows="7"
+                            title="digite aqui sua mensagem"></textarea>
+                        <br>
+                    </fieldset>
+                    <br>
+
+                    <fieldset>
+                        <legend>Envio do Formulário</legend>
+                        <script src="./js/script.js"></script>
+                        <input type="submit" name="envio" value="Enviar">
+                        <input type="reset" name="redefinir" value="Limpar">
+                    </fieldset>
+                </form>
+                <br>
+                <br>
+
+                <blockquote id="mapa"><b>Sinta-se a vontade em nos visitar</b></blockquote>
+                <section>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99047.672235029!2d-43.53409986264066!3d-22.695468157402335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x995d694889f955%3A0x23ff502568217834!2sNova%20Igua%C3%A7u%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1698449380313!5m2!1spt-BR!2sbr"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </div>
+
+            <div class="footer">
+                <!-- Aqui vai o seu rodapé -->
+                <br><br><br>
+                <section>
+                    <i><b>Nosso lema é "Sua saúde em primeiro lugar!"</b></i>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
