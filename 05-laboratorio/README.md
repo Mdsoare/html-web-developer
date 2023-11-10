@@ -117,6 +117,9 @@ docker -compose up -d
 ## Referências 🔎
 - [Docker Docs](https://docs.docker.com/)
 - [FreeCodeCamp](https://www.freecodecamp.org/portuguese/news/um-guia-para-iniciantes-em-docker-como-criar-sua-primeira-aplicacao-com-o-docker/)
+- [4Linux](https://blog.4linux.com.br/docker-compose-explicado/)
+- [Blog AWS](https://aws.amazon.com/pt/blogs/aws-brasil/como-conteinerizar-uma-aplicacao-em-15-minutos/)
+- [RedHat Topics](https://www.redhat.com/pt-br/topics/automation/what-is-yaml)
 
 ##
 <div align="center">Disponibilizado por <a href="https://github.com/Mdsoare">🕶 Marcelo Soares ®</a>.</div>
